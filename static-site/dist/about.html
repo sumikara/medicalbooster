@@ -464,24 +464,67 @@
 </footer>
 
 <!-- Cookie/KVKK Consent Popup -->
-<div class="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 pointer-events-none flex justify-center">
-<div class="bg-surface-container-lowest border-2 border-primary-container rounded-xl shadow-2xl p-6 max-w-4xl w-full pointer-events-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-<div class="flex-grow">
-<h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Cookie &amp; KVKK Consent</h3>
-<p class="font-body-sm text-body-md text-on-surface-variant text-sm">
-                    We use cookies to ensure optimal B2B functionality and analyze site traffic in compliance with KVKK regulations. By clicking "Accept All", you consent to our use of cookies.
-                </p>
+<div id="mb-cookie-consent" class="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 pointer-events-none flex justify-center hidden">
+  <div class="bg-surface-container-lowest border-2 border-primary-container rounded-xl shadow-2xl p-6 max-w-4xl w-full pointer-events-auto flex flex-col gap-5">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="flex-grow">
+        <h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Cookie &amp; KVKK Consent</h3>
+        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">
+          We use cookies to ensure optimal B2B functionality, remember preferences, and analyze site traffic in compliance with KVKK regulations.
+          You can accept all cookies, reject optional cookies, or manage your preferences.
+        </p>
+      </div>
+
+      <div class="flex shrink-0 gap-3 w-full md:w-auto">
+        <button id="mb-cookie-manage" class="flex-1 md:flex-none px-6 py-2 rounded-full border border-outline font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" type="button">
+          Manage
+        </button>
+        <button id="mb-cookie-reject" class="flex-1 md:flex-none px-6 py-2 rounded-full border border-outline font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors" type="button">
+          Reject Optional
+        </button>
+        <button id="mb-cookie-accept" class="flex-1 md:flex-none px-6 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity" type="button">
+          Accept All
+        </button>
+      </div>
+    </div>
+
+    <div id="mb-cookie-preferences" class="hidden border-t border-outline-variant pt-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <label class="bg-surface p-4 rounded-lg border border-outline-variant flex items-start gap-3">
+          <input checked disabled class="mt-1 rounded text-primary border-outline focus:ring-primary" type="checkbox">
+          <span>
+            <span class="block font-label-md text-label-md font-bold text-on-surface">Necessary</span>
+            <span class="block font-body-md text-body-md text-on-surface-variant text-sm">Required for basic site functionality.</span>
+          </span>
+        </label>
+
+        <label class="bg-surface p-4 rounded-lg border border-outline-variant flex items-start gap-3">
+          <input id="mb-cookie-analytics" class="mt-1 rounded text-primary border-outline focus:ring-primary" type="checkbox">
+          <span>
+            <span class="block font-label-md text-label-md font-bold text-on-surface">Analytics</span>
+            <span class="block font-body-md text-body-md text-on-surface-variant text-sm">Helps us understand page usage and improve the catalog experience.</span>
+          </span>
+        </label>
+
+        <label class="bg-surface p-4 rounded-lg border border-outline-variant flex items-start gap-3">
+          <input id="mb-cookie-marketing" class="mt-1 rounded text-primary border-outline focus:ring-primary" type="checkbox">
+          <span>
+            <span class="block font-label-md text-label-md font-bold text-on-surface">Marketing</span>
+            <span class="block font-body-md text-body-md text-on-surface-variant text-sm">Supports campaign measurement and B2B inquiry optimization.</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-end gap-3 mt-5">
+        <button id="mb-cookie-save" class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity" type="button">
+          Save Preferences
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="flex shrink-0 gap-3 w-full md:w-auto">
-<button class="flex-1 md:flex-none px-6 py-2 rounded-full border border-outline font-label-md text-label-md text-on-surface hover:bg-surface-container transition-colors">
-                    Manage
-                </button>
-<button class="flex-1 md:flex-none px-6 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:opacity-90 transition-opacity">
-                    Accept All
-                </button>
-</div>
-</div>
-</div>
+
+<script src="assets/js/cookie-consent.js"></script>
 
 </body>
 </html>
