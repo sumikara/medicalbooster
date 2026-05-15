@@ -1,0 +1,321 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>All Products - Medical Booster</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container": "#f0ede9",
+                        "surface-dim": "#dcdad5",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb786",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#ff843c",
+                        "surface-container-low": "#f6f3ee",
+                        "tertiary-fixed": "#ece1d6",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2dd",
+                        "on-secondary-fixed": "#341100",
+                        "tertiary-container": "#a99f95",
+                        "on-primary": "#ffffff",
+                        "secondary": "#9e4300",
+                        "surface-container-high": "#ebe8e3",
+                        "background": "#fcf9f4",
+                        "inverse-primary": "#ffb786",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#5b2a00",
+                        "outline": "#8a7264",
+                        "surface-tint": "#964900",
+                        "inverse-on-surface": "#f3f0eb",
+                        "tertiary-fixed-dim": "#cfc5ba",
+                        "tertiary": "#655d55",
+                        "secondary-fixed-dim": "#ffb691",
+                        "on-background": "#1c1c19",
+                        "primary": "#964900",
+                        "surface": "#fcf9f4",
+                        "on-tertiary-container": "#3d362f",
+                        "on-secondary-fixed-variant": "#793100",
+                        "on-tertiary-fixed": "#201b14",
+                        "on-primary-fixed-variant": "#723600",
+                        "secondary-fixed": "#ffdbcb",
+                        "on-tertiary-fixed-variant": "#4d463e",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#564336",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#f58220",
+                        "surface-container-highest": "#e5e2dd",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-container": "#662900",
+                        "surface-bright": "#fcf9f4",
+                        "inverse-surface": "#31302d",
+                        "outline-variant": "#ddc1b0"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "grid-gutter": "24px",
+                        "container-margin": "auto",
+                        "base": "8px",
+                        "section-gap-mobile": "64px",
+                        "section-gap": "120px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "headline-xl": ["68px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "headline-lg": ["40px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "600" }],
+                        "headline-xl-mobile": ["48px", { lineHeight: "1.1", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "500" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #fcf9f4; }
+    </style>
+<style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm dark:shadow-none fixed top-0 w-full z-50">
+<div class="flex justify-between items-center max-w-[1280px] mx-auto px-grid-gutter h-20">
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright">Medical Booster</div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-label-md text-label-md text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-80 transition-opacity" href="#">Products</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#">Categories</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#">About Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors hover:opacity-80" href="#">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<span class="font-label-md text-label-md text-on-surface-variant">EN</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-80 transition-opacity">Request Quote</button>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-section-gap px-grid-gutter max-w-[1280px] mx-auto w-full">
+<!-- Breadcrumb -->
+<nav aria-label="Breadcrumb" class="mb-8">
+<ol class="flex items-center space-x-2 text-surface-variant">
+<li class=""><a class="hover:text-primary font-label-md text-label-md" href="#">Home</a></li>
+<li><span class="material-symbols-outlined text-[16px]">chevron_right</span></li>
+<li class=""><span aria-current="page" class="text-on-surface-variant font-label-md text-label-md font-bold">Products</span></li>
+</ol>
+</nav>
+<!-- Header -->
+<div class="mb-12">
+<h1 class="font-headline-xl text-headline-xl hidden md:block text-on-background">All Korean Aesthetic Products</h1>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:hidden text-on-background">All Korean Aesthetic Products</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">Explore our comprehensive catalog of premium clinical supplies, meticulously sourced for professional use.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-grid-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 flex-shrink-0 space-y-8">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_20px_40px_rgba(111,106,100,0.08)]">
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Categories</h3>
+<div class="space-y-3">
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input checked="" class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Toxins</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Fillers</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Skin Boosters</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Threads</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_20px_40px_rgba(111,106,100,0.08)]">
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Brands</h3>
+<div class="space-y-3">
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Brand A</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Brand B</span>
+</label>
+<label class="flex items-center space-x-3 cursor-pointer group">
+<input class="form-checkbox text-primary rounded border-outline focus:ring-primary-container" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">Brand C</span>
+</label>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-grid-gutter">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0_20px_40px_rgba(111,106,100,0.08)] flex flex-col hover:shadow-[0_30px_60px_rgba(111,106,100,0.12)] transition-shadow duration-300">
+<div class="aspect-square bg-surface-container-low rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+<img alt="Clinical product" class="object-cover w-full h-full mix-blend-multiply opacity-80" data-alt="A pristine, clinical close-up of a high-end medical aesthetic vial on a sterile white surface. The lighting is soft and bright, emphasizing cleanliness and premium quality. The overall palette is bright white with subtle warm sand undertones to match the UI. The composition feels professional, trustworthy, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsgcAPwfXLVFaQeTKQhOokHAJwFvGYndEWzjEl9506xPCdaAl7942SE0Z5ESD97UadDGUJOUCjRx1Rhd9-Uh9OeQEsthy6CwePgHotwXchmOXHEZQM2qJAPOfTrWv21d-3CgJ6aIMEWMrjeIJh5aQtCtryiyoZKEfbjjd-zQaQl8v6eVGq1a0f327-f6ZzmaJlvITbZpBZI2KuhFX9UkoDbHtQPbD8q5bUyzPthc5CxuougUI6LiMGbpNraE2oot6gUqGcttnOQ4xv">
+</div>
+<div class="flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-2 block uppercase tracking-wider">Toxin</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Premium Neurotoxin 100U</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">High-purity type A formulation for precise clinical applications.</p>
+</div>
+<div class="flex flex-col space-y-3 mt-auto">
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors">Request Price</button>
+<button class="w-full border-2 border-outline text-on-surface py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors">View Details</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0_20px_40px_rgba(111,106,100,0.08)] flex flex-col hover:shadow-[0_30px_60px_rgba(111,106,100,0.12)] transition-shadow duration-300">
+<div class="aspect-square bg-surface-container-low rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+<img alt="Clinical product" class="object-cover w-full h-full mix-blend-multiply opacity-80" data-alt="A macro shot of a sleek, pre-filled dermal filler syringe resting on a clean, light-colored tray. The image uses shallow depth of field to focus on the premium packaging. Lighting is natural but controlled, highlighting the modern, sterile environment. The warm sand background harmonizes with the brand palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC52SrxQjBbyWXo1BvFmx3vcJ-qqWW2kdwqjibu8MzSq8H8IZDzU9USHNBii0ZzNA9Yxca6L-hgN55_e9gwQdMKtYD5mOFOfyBCJr7OU2RKSl_yufKE4mzw4nRGjK3lN6pdaQ_iYHq8FezGXkXOdPgwaPQbUz5xOr3LHbfTu9OrQB8oIqRU49cfjq6089_upoH-pRq9Xm3XmS32UtaJjoBBoJ0mH5U8Ox0cCEqZCuErqYXgoKew06IxWn5IsQirsTMYpOTnw3ZoHlrl">
+</div>
+<div class="flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-2 block uppercase tracking-wider">Filler</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Advanced HA Filler</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Cross-linked hyaluronic acid gel for volume restoration.</p>
+</div>
+<div class="flex flex-col space-y-3 mt-auto">
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors">Request Price</button>
+<button class="w-full border-2 border-outline text-on-surface py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors">View Details</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-[24px] p-6 shadow-[0_20px_40px_rgba(111,106,100,0.08)] flex flex-col hover:shadow-[0_30px_60px_rgba(111,106,100,0.12)] transition-shadow duration-300">
+<div class="aspect-square bg-surface-container-low rounded-xl mb-6 relative overflow-hidden flex items-center justify-center">
+<img alt="Clinical product" class="object-cover w-full h-full mix-blend-multiply opacity-80" data-alt="Several clinical grade glass ampoules arranged neatly on a softly lit, minimalist surface. The lighting creates subtle reflections on the glass, conveying a sense of advanced dermatological science. The color palette leans towards clean whites and soft warm greys, perfect for a high-end medical catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSObHpqULzMW_Uk68UYkDyWKEmPKH388KVK3qavGBp62cYLLkwxqZ9X3HzJYskYPM1vTVeMg60UerVo7CmHt940KpYno_yWn8Zq3wBimKcppKEc4ow3bvsdCGe8oE-ZH7SQPzbboXdt7-rqhWBj4Zsx_SxssKP1e1W_YoyPgOtojDOLyQsSK-W08FbnGtNqwn3KZfbrnmS_PsP8aqwZtsW46XXHTVksqlhADL6bSIkanftJmU4PtucxNtaEqmcqGBnCCJxAAscJFzp">
+</div>
+<div class="flex-grow">
+<span class="font-label-sm text-label-sm text-primary mb-2 block uppercase tracking-wider">Skin Booster</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Revitalizing Complex</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Intensive hydration and skin texture improvement formula.</p>
+</div>
+<div class="flex flex-col space-y-3 mt-auto">
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors">Request Price</button>
+<button class="w-full border-2 border-outline text-on-surface py-3 rounded-lg font-label-md text-label-md hover:bg-surface-container-low transition-colors">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PDF Catalog Strip -->
+<div class="mt-section-gap bg-primary-fixed/30 rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between border border-primary-fixed">
+<div class="flex items-center space-x-6 mb-6 md:mb-0">
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm text-primary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">picture_as_pdf</span>
+</div>
+<div>
+<h3 class="font-headline-lg text-headline-lg hidden md:block text-on-primary-container mb-2">Download Full Catalog</h3>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden text-on-primary-container mb-2">Download Full Catalog</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Get comprehensive product specifications and clinical data.</p>
+</div>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-primary/90 transition-colors flex items-center justify-center space-x-2">
+<span class="">Download PDF</span>
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+
+
+
+<footer class="bg-on-background text-surface-container-lowest pt-20 pb-10 px-grid-gutter">
+  <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    <!-- Brand Section -->
+    <div class="space-y-6">
+      <div class="text-headline-md font-bold text-white">Medical Booster</div>
+      <p class="text-body-md opacity-70 leading-relaxed">Your trusted global partner for premium Korean aesthetic solutions. We bridge the gap between innovation and clinical excellence.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="w-10 h-10 rounded-full bg-surface-container-high/10 flex items-center justify-center hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined text-xl">public</span>
+        </a>
+        <a href="#" class="w-10 h-10 rounded-full bg-surface-container-high/10 flex items-center justify-center hover:bg-primary transition-colors">
+          <span class="material-symbols-outlined text-xl">share</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-headline-sm font-bold text-white mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+      <ul class="space-y-4">
+        <li class=""><a href="#" class="text-body-md opacity-70 hover:opacity-100 hover:text-primary transition-all">Products</a></li>
+        <li class=""><a href="#" class="text-body-md opacity-70 hover:opacity-100 hover:text-primary transition-all">Special Offers</a></li>
+        <li class=""><a href="#" class="text-body-md opacity-70 hover:opacity-100 hover:text-primary transition-all">About Us</a></li>
+        <li class=""><a href="#" class="text-body-md opacity-70 hover:opacity-100 hover:text-primary transition-all">Clinical Resources</a></li>
+        <li class=""><a href="#" class="text-body-md opacity-70 hover:opacity-100 hover:text-primary transition-all">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="space-y-6">
+      <h4 class="text-headline-sm font-bold text-white mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
+      <div class="flex items-start space-x-4">
+        <span class="material-symbols-outlined text-primary">location_on</span>
+        <p class="text-body-md opacity-70">123 Gangnam-daero, Seoul, South Korea</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="material-symbols-outlined text-blue-400">mail</span>
+        <a href="mailto:info@medicalbooster.com" class="text-body-md opacity-70 hover:opacity-100">info@medicalbooster.com</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="material-symbols-outlined text-green-400">call</span>
+        <p class="text-body-md opacity-70">+82 (2) 1234-5678</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="material-symbols-outlined text-primary-container">schedule</span>
+        <p class="text-body-md opacity-70">Mon - Fri: 9:00 - 18:00 KST</p>
+      </div>
+    </div>
+
+    <!-- Interactive Map Placeholder -->
+    <div class="h-64 lg:h-full bg-surface-container-high/5 rounded-xl overflow-hidden border border-white/10 group relative">
+      <div class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/ALy-l6Lqf9D0x8XvG-UoR2sX-O1y_4P9E6wJ_o0zS0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0Z0z0')] bg-cover bg-center grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-primary text-white p-2 rounded-lg shadow-lg">
+          <span class="material-symbols-outlined">location_away</span>
+        </div>
+      </div>
+      <div class="absolute bottom-2 left-2 bg-black/50 backdrop-blur-sm text-[10px] px-2 py-1 rounded">Map Data © 2024</div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-[1280px] mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="text-body-sm opacity-50 flex space-x-6">
+      <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+      <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+      <a href="#" class="hover:text-primary transition-colors">Shipping Policy</a>
+    </div>
+    <p class="text-body-sm opacity-50 text-center md:text-right">) 2024 Medical Booster. Licensed Wholesale Distributor.</p>
+  </div>
+</footer></body></html>
