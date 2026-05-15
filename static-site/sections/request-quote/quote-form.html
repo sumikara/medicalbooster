@@ -1,0 +1,73 @@
+<!-- Left Column: Inquiry Form -->
+<div class="col-span-1 lg:col-span-8">
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-10 shadow-sm border border-surface-variant">
+<form class="space-y-6">
+<!-- Row 1: Name & Company -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="fullName">Full Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="fullName" placeholder="Dr. Jane Doe" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="company">Clinic / Company Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="company" placeholder="Aesthetics Clinic Inc." type="text">
+</div>
+</div>
+<!-- Row 2: Email & WhatsApp -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="email">Business Email *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="email" placeholder="contact@clinic.com" type="email">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="whatsapp">WhatsApp Number</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="whatsapp" placeholder="+1 (555) 000-0000" type="tel">
+</div>
+</div>
+<!-- Row 3: Country -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="country">Country of Operation *</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full appearance-none bg-no-repeat bg-[right_1rem_center]" id="country" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23564336%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');">
+<option disabled="" selected="" value="">Select your country</option>
+<option value="us">United States</option>
+<option value="uk">United Kingdom</option>
+<option value="eu">European Union</option>
+<option value="other">Other Region</option>
+</select>
+</div>
+<!-- Row 4: Product Interest -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="interest">Product Interest / Specific Inquiry *</label>
+<textarea class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full resize-y" id="interest" placeholder="Please list the products, brands, or active ingredients you are interested in sourcing..." rows="4"></textarea>
+</div>
+<!-- Row 5: Estimated Quantity -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="quantity">Estimated Monthly Volume *</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full appearance-none bg-no-repeat bg-[right_1rem_center]" id="quantity" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23564336%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');">
+<option disabled="" selected="" value="">Select volume range</option>
+<option value="tier1">$1,000 - $5,000</option>
+<option value="tier2">$5,000 - $20,000</option>
+<option value="tier3">$20,000+</option>
+</select>
+</div>
+<!-- Eligibility Checkbox -->
+<div class="flex items-start gap-3 mt-6">
+<div class="flex items-center h-5 mt-1">
+<input class="w-5 h-5 border-outline-variant rounded text-primary focus:ring-primary bg-surface cursor-pointer" id="eligibility" type="checkbox">
+</div>
+<label class="font-body-md text-body-md text-on-surface-variant cursor-pointer" for="eligibility">
+                                    I confirm that I am a licensed medical professional, clinic owner, or registered medical distributor. I understand that Medical Booster strictly supplies B2B entities and requires verification prior to shipment.
+                                </label>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-label-md font-bold hover:opacity-80 transition-opacity uppercase tracking-widest shadow-md" type="button">
+                                    Submit Wholesale Inquiry
+                                </button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-4">
+                                    Secure, encrypted transmission. We do not share your data.
+                                </p>
+</div>
+</form>
+</div>
+</div>

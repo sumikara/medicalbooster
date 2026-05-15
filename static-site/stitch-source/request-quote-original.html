@@ -1,0 +1,378 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Request Quote - Medical Booster</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f0ede9",
+                        "surface-dim": "#dcdad5",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb786",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#ff843c",
+                        "surface-container-low": "#f6f3ee",
+                        "tertiary-fixed": "#ece1d6",
+                        "primary-fixed": "#ffdcc6",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2dd",
+                        "on-secondary-fixed": "#341100",
+                        "tertiary-container": "#a99f95",
+                        "on-primary": "#ffffff",
+                        "secondary": "#9e4300",
+                        "surface-container-high": "#ebe8e3",
+                        "background": "#fcf9f4",
+                        "inverse-primary": "#ffb786",
+                        "on-primary-fixed": "#311300",
+                        "on-primary-container": "#5b2a00",
+                        "outline": "#8a7264",
+                        "surface-tint": "#964900",
+                        "inverse-on-surface": "#f3f0eb",
+                        "tertiary-fixed-dim": "#cfc5ba",
+                        "tertiary": "#655d55",
+                        "secondary-fixed-dim": "#ffb691",
+                        "on-background": "#1c1c19",
+                        "primary": "#964900",
+                        "surface": "#fcf9f4",
+                        "on-tertiary-container": "#3d362f",
+                        "on-secondary-fixed-variant": "#793100",
+                        "on-tertiary-fixed": "#201b14",
+                        "on-primary-fixed-variant": "#723600",
+                        "secondary-fixed": "#ffdbcb",
+                        "on-tertiary-fixed-variant": "#4d463e",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#564336",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#f58220",
+                        "surface-container-highest": "#e5e2dd",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1c1c19",
+                        "on-secondary-container": "#662900",
+                        "surface-bright": "#fcf9f4",
+                        "inverse-surface": "#31302d",
+                        "outline-variant": "#ddc1b0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "grid-gutter": "24px",
+                        "container-margin": "auto",
+                        "base": "8px",
+                        "section-gap-mobile": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-xl": ["68px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style data-stitch-cursor=""></style><style data-stitch-scroll-lock=""></style></head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-[1280px] mx-auto px-grid-gutter h-20">
+<!-- Brand Logo -->
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-surface-bright flex items-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                Medical Booster
+            </div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Products</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Categories</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">About Us</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md">
+                    EN <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md text-label-md font-bold hover:opacity-80 transition-opacity whitespace-nowrap">
+                    Request Quote
+                </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow pt-32 pb-section-gap">
+<div class="max-w-[1280px] mx-auto px-grid-gutter">
+<!-- Hero Section -->
+<div class="mb-16 max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-4">Request Wholesale Pricing</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Partner with us for premium K-Beauty clinical supplies. Complete the inquiry form below, and our dedicated B2B team will provide you with a customized quotation based on your estimated volume and location.
+                </p>
+</div>
+<!-- Two Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+<!-- Left Column: Inquiry Form -->
+<div class="col-span-1 lg:col-span-8">
+<div class="bg-surface-container-lowest rounded-2xl p-6 md:p-10 shadow-sm border border-surface-variant">
+<form class="space-y-6">
+<!-- Row 1: Name & Company -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="fullName">Full Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="fullName" placeholder="Dr. Jane Doe" type="text">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="company">Clinic / Company Name *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="company" placeholder="Aesthetics Clinic Inc." type="text">
+</div>
+</div>
+<!-- Row 2: Email & WhatsApp -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="email">Business Email *</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="email" placeholder="contact@clinic.com" type="email">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="whatsapp">WhatsApp Number</label>
+<input class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full" id="whatsapp" placeholder="+1 (555) 000-0000" type="tel">
+</div>
+</div>
+<!-- Row 3: Country -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="country">Country of Operation *</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full appearance-none bg-no-repeat bg-[right_1rem_center]" id="country" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23564336%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');">
+<option disabled="" selected="" value="">Select your country</option>
+<option value="us">United States</option>
+<option value="uk">United Kingdom</option>
+<option value="eu">European Union</option>
+<option value="other">Other Region</option>
+</select>
+</div>
+<!-- Row 4: Product Interest -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="interest">Product Interest / Specific Inquiry *</label>
+<textarea class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full resize-y" id="interest" placeholder="Please list the products, brands, or active ingredients you are interested in sourcing..." rows="4"></textarea>
+</div>
+<!-- Row 5: Estimated Quantity -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider" for="quantity">Estimated Monthly Volume *</label>
+<select class="bg-surface border border-outline-variant rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors font-body-md text-body-md w-full appearance-none bg-no-repeat bg-[right_1rem_center]" id="quantity" style="background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23564336%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');">
+<option disabled="" selected="" value="">Select volume range</option>
+<option value="tier1">$1,000 - $5,000</option>
+<option value="tier2">$5,000 - $20,000</option>
+<option value="tier3">$20,000+</option>
+</select>
+</div>
+<!-- Eligibility Checkbox -->
+<div class="flex items-start gap-3 mt-6">
+<div class="flex items-center h-5 mt-1">
+<input class="w-5 h-5 border-outline-variant rounded text-primary focus:ring-primary bg-surface cursor-pointer" id="eligibility" type="checkbox">
+</div>
+<label class="font-body-md text-body-md text-on-surface-variant cursor-pointer" for="eligibility">
+                                    I confirm that I am a licensed medical professional, clinic owner, or registered medical distributor. I understand that Medical Booster strictly supplies B2B entities and requires verification prior to shipment.
+                                </label>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-label-md font-bold hover:opacity-80 transition-opacity uppercase tracking-widest shadow-md" type="button">
+                                    Submit Wholesale Inquiry
+                                </button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-4">
+                                    Secure, encrypted transmission. We do not share your data.
+                                </p>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Column: Contact Panel -->
+<div class="col-span-1 lg:col-span-4 space-y-6">
+<!-- Direct Support Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant hover:shadow-md transition-shadow">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Direct Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                            Need immediate assistance or have questions about a specific batch? Reach out directly via WhatsApp for the fastest response.
+                        </p>
+<a class="inline-flex items-center justify-center w-full gap-2 border-2 border-primary text-primary py-3 rounded-lg font-label-md text-label-md font-bold hover:bg-primary/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">chat</span>
+                            Message on WhatsApp
+                        </a>
+</div>
+<!-- Business Hours Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<h3 class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Business Hours (KST)</h3>
+</div>
+<ul class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between border-b border-surface-variant pb-2">
+<span class="">Mon - Fri</span>
+<span class="font-medium text-on-surface">09:00 - 18:00</span>
+</li>
+<li class="flex justify-between border-b border-surface-variant pb-2">
+<span class="">Saturday</span>
+<span class="font-medium text-on-surface">10:00 - 14:00</span>
+</li>
+<li class="flex justify-between">
+<span class="">Sunday</span>
+<span class="font-medium text-outline">Closed</span>
+</li>
+</ul>
+</div>
+<!-- Shipping Info Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-surface-variant">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">local_shipping</span>
+<h3 class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Global Shipping</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                            All products are sourced directly from manufacturers in South Korea to ensure 100% authenticity and maximum shelf-life.
+                        </p>
+<div class="bg-surface p-4 rounded-lg flex items-start gap-3 border border-outline-variant">
+<span class="material-symbols-outlined text-primary mt-0.5">verified_user</span>
+<div>
+<h4 class="font-label-sm text-label-sm font-bold text-on-surface mb-1">Cold-Chain Compliant</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Temperature-sensitive items are shipped with specialized thermal packaging.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-background w-full pt-20 pb-10">
+    <div class="max-w-[1280px] mx-auto px-grid-gutter">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand & Contact -->
+            <div class="flex flex-col gap-6">
+                <div class="font-headline-md text-headline-md font-bold text-surface-bright flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary-fixed-dim" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                    Medical Booster
+                </div>
+                <p class="font-body-md text-surface-container-low opacity-80">
+                    Global B2B marketplace for medical aesthetics and clinical K-beauty supplies. Licensed distribution network with worldwide logistics.
+                </p>
+                <div class="flex flex-col gap-4 mt-2">
+                    <div class="flex items-center gap-3 text-surface-variant">
+                        <span class="material-symbols-outlined text-primary-fixed-dim">mail</span>
+                        <span class="">contact@medicalbooster.com</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-surface-variant">
+                        <span class="material-symbols-outlined text-primary-fixed-dim">call</span>
+                        <span class="">+82-2-123-4567</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-label-md text-label-md font-bold text-surface-bright uppercase tracking-widest">Marketplace</h4>
+                <nav class="flex flex-col gap-3">
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Dermal Fillers</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Botulinum Toxins</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Skin Boosters</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Device &amp; Equipment</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Bulk Orders</a>
+                </nav>
+            </div>
+
+            <!-- Support & Legal -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-label-md text-label-md font-bold text-surface-bright uppercase tracking-widest">Support</h4>
+                <nav class="flex flex-col gap-3">
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Shipping Policy</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Returns &amp; Refunds</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Regulatory Compliance</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-surface-variant hover:text-primary-fixed transition-colors">Terms of Service</a>
+                </nav>
+            </div>
+
+            <!-- Interactive Map Placeholder -->
+            <div class="flex flex-col gap-6">
+                <h4 class="font-label-md text-label-md font-bold text-surface-bright uppercase tracking-widest">Global Reach</h4>
+                <div class="relative w-full aspect-video bg-surface-container/10 rounded-xl overflow-hidden border border-surface-container/20 group cursor-pointer">
+                    <!-- Visual Map Representation -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                         <span class="material-symbols-outlined text-6xl text-primary-fixed-dim/30 group-hover:scale-110 transition-transform duration-500">public</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+                        <span class="text-surface-bright text-xs font-medium">Serving 50+ countries with cold-chain logistics</span>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-surface-container/10 flex items-center justify-center text-surface-variant hover:bg-primary-container hover:text-on-primary transition-all">
+                        <span class="material-symbols-outlined text-xl">share</span>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-surface-container/10 flex items-center justify-center text-surface-variant hover:bg-primary-container hover:text-on-primary transition-all">
+                        <span class="material-symbols-outlined text-xl">hub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-surface-container/20 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="font-label-sm text-surface-variant opacity-60 text-center md:text-left">
+                © 2024 Medical Booster Co., Ltd. Seoul, South Korea. Licensed Medical Wholesaler.
+            </p>
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-xs text-surface-variant">Systems Operational</span>
+                </div>
+                <div class="flex gap-4">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-4 opacity-50 grayscale hover:grayscale-0 transition-all">
+                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-4 opacity-50 grayscale hover:grayscale-0 transition-all">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body></html>
