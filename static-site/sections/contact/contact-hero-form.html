@@ -1,0 +1,144 @@
+<style>
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: #fcf9f4; overflow-x: hidden; }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05);
+        }
+
+        .abstract-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+
+        /* Modern floating labels */
+        .floating-input:focus ~ .floating-label,
+        .floating-input:not(:placeholder-shown) ~ .floating-label {
+            transform: translateY(-1.5rem) scale(0.85);
+            color: #f58220; /* Brand Orange */
+        }
+</style>
+<!-- Background Elements -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
+<div class="abstract-blob bg-primary-container/20 w-[600px] h-[600px] top-[-200px] left-[-100px]"></div>
+<div class="abstract-blob bg-surface-variant w-[800px] h-[800px] bottom-[-200px] right-[-200px]" style="animation-delay: -5s;"></div>
+<div class="abstract-blob bg-secondary-container/10 w-[500px] h-[500px] top-[40%] left-[60%]" style="animation-delay: -10s;"></div>
+</div>
+<!-- Asymmetric Hero & Form Section -->
+<section class="min-h-screen px-6 lg:px-12 pt-20 pb-section-gap relative">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<!-- Left Side: Content & Quick Actions -->
+<div class="lg:col-span-5 lg:sticky lg:top-32 space-y-12">
+<div>
+<h1 class="text-5xl lg:text-[80px] leading-[1.05] font-bold text-on-surface tracking-tight mb-8">
+                    Let's <span class="text-primary-container">Connect.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Partner with Korea's premier medical aesthetics distributor. Our global team is ready to accelerate your business.
+                </p>
+</div>
+<!-- WhatsApp Integration -->
+<div class="inline-flex items-center gap-4 bg-white p-2 pr-6 rounded-full shadow-lg border border-outline-variant/30 hover:shadow-xl transition-shadow cursor-pointer group">
+<div class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform">
+<svg fill="white" height="28" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.41 0 .01 5.399.007 12.039c0 2.122.554 4.194 1.607 6.039L0 24l6.102-1.6c1.789.976 3.805 1.491 5.86 1.492h.005c6.64 0 12.04-5.399 12.043-12.04.002-3.218-1.248-6.242-3.513-8.511z"></path>
+</svg>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-0.5">Instant Support</p>
+<p class="font-headline-md text-lg font-bold text-on-surface">Chat on WhatsApp</p>
+</div>
+</div>
+<!-- Quick Email & HQ -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+<div>
+<p class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest mb-3">Quick Email</p>
+<a class="text-xl font-medium text-on-surface hover:text-primary-container transition-colors break-words" href="mailto:wholesale@medicalbooster.kr">
+                        wholesale@<br>medicalbooster.kr
+                    </a>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest mb-3">HQ Direct</p>
+<p class="text-xl font-medium text-on-surface">
+                        +82 2 1234 5678
+                    </p>
+<p class="font-body-sm text-sm text-on-surface-variant mt-2">Mon-Fri, 9AM-6PM KST</p>
+</div>
+</div>
+<!-- Social Links -->
+<div class="pt-8 flex items-center gap-6">
+<a class="w-12 h-12 rounded-full flex items-center justify-center text-white bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] shadow-lg hover:scale-110 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span> <!-- Placeholder for IG -->
+</a>
+<a class="w-12 h-12 rounded-full flex items-center justify-center text-white bg-[#1877F2] shadow-lg hover:scale-110 transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">thumb_up</span> <!-- Placeholder for FB -->
+</a>
+<a class="w-12 h-12 rounded-full border border-outline-variant/50 flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-white hover:border-transparent transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-[20px]">work</span> <!-- Placeholder for LinkedIn -->
+</a>
+</div>
+</div>
+<!-- Right Side: Create Inquiry Form -->
+<div class="lg:col-span-7 relative">
+<div class="glass-panel p-10 md:p-14 rounded-[40px] relative z-10">
+<h2 class="text-3xl font-bold text-on-surface mb-10">Create Inquiry</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<!-- Floating Label Input -->
+<div class="relative group">
+<input class="floating-input peer w-full bg-transparent border-b-2 border-outline-variant/50 focus:border-primary-container py-3 px-0 text-on-surface placeholder-transparent focus:ring-0 outline-none transition-colors" id="fullName" placeholder="Full Name" type="text">
+<label class="floating-label absolute left-0 top-3 font-medium text-on-surface-variant/70 transition-all duration-200 pointer-events-none transform origin-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100" for="fullName">Full Name</label>
+</div>
+<div class="relative group">
+<input class="floating-input peer w-full bg-transparent border-b-2 border-outline-variant/50 focus:border-primary-container py-3 px-0 text-on-surface placeholder-transparent focus:ring-0 outline-none transition-colors" id="company" placeholder="Clinic/Company Name" type="text">
+<label class="floating-label absolute left-0 top-3 font-medium text-on-surface-variant/70 transition-all duration-200 pointer-events-none transform origin-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100" for="company">Clinic/Company Name</label>
+</div>
+</div>
+<div class="relative group">
+<input class="floating-input peer w-full bg-transparent border-b-2 border-outline-variant/50 focus:border-primary-container py-3 px-0 text-on-surface placeholder-transparent focus:ring-0 outline-none transition-colors" id="email" placeholder="Email Address" type="email">
+<label class="floating-label absolute left-0 top-3 font-medium text-on-surface-variant/70 transition-all duration-200 pointer-events-none transform origin-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100" for="email">Email Address</label>
+</div>
+<div class="relative">
+<select class="w-full bg-transparent border-b-2 border-outline-variant/50 focus:border-primary-container py-3 px-0 text-on-surface focus:ring-0 outline-none appearance-none transition-colors font-medium cursor-pointer">
+<option disabled="" hidden="" selected="" value="">Select Inquiry Type</option>
+<option class="text-on-surface bg-surface">Wholesale Product Catalog Request</option>
+<option class="text-on-surface bg-surface">Shipping &amp; Logistics Inquiry</option>
+<option class="text-on-surface bg-surface">Regulatory &amp; Certification Support</option>
+<option class="text-on-surface bg-surface">Other Inquiry</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 top-4 text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative group">
+<textarea class="floating-input peer w-full bg-transparent border-b-2 border-outline-variant/50 focus:border-primary-container py-3 px-0 text-on-surface placeholder-transparent focus:ring-0 outline-none transition-colors resize-none" id="message" placeholder="Message Details" rows="4"></textarea>
+<label class="floating-label absolute left-0 top-3 font-medium text-on-surface-variant/70 transition-all duration-200 pointer-events-none transform origin-left peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100" for="message">Tell us about your requirements...</label>
+</div>
+<div class="pt-4">
+<button class="w-full bg-primary-container text-white py-5 rounded-full font-bold text-lg hover:bg-on-surface transition-all duration-300 shadow-[0_10px_30px_rgba(245,130,32,0.3)] hover:shadow-xl flex items-center justify-center gap-3 group" type="submit">
+                            Send Inquiry
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Abstract decorative element behind form -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-primary-container/40 to-transparent rounded-full blur-2xl z-0"></div>
+</div>
+</div>
+</section>
