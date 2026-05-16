@@ -88,10 +88,10 @@
                     "fontSize": {
                         "body-lg": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
                         "headline-md": ["22px", { "lineHeight": "1.3", "fontWeight": "600" }],
-                        "headline-xl": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
                         "headline-lg": ["34px", { "lineHeight": "1.2", "fontWeight": "600" }],
                         "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "headline-xl-mobile": ["40px", { "lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["34px", { "lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600" }],
                         "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500" }],
                         "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
                     }
@@ -193,17 +193,17 @@
 </style>
 <!-- Background Elements -->
 <div class="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
-<div class="abstract-blob bg-primary-container/20 w-[600px] h-[600px] top-[-200px] left-[-100px]"></div>
-<div class="abstract-blob bg-surface-variant w-[800px] h-[800px] bottom-[-200px] right-[-200px]" style="animation-delay: -5s;"></div>
-<div class="abstract-blob bg-secondary-container/10 w-[500px] h-[500px] top-[40%] left-[60%]" style="animation-delay: -10s;"></div>
+<div class="abstract-blob bg-primary-container/20 w-[420px] h-[420px] top-[-160px] left-[-80px]"></div>
+<div class="abstract-blob bg-surface-variant w-[560px] h-[560px] bottom-[-160px] right-[-160px]" style="animation-delay: -5s;"></div>
+<div class="abstract-blob bg-secondary-container/10 w-[360px] h-[360px] top-[40%] left-[60%]" style="animation-delay: -10s;"></div>
 </div>
 <!-- Asymmetric Hero & Form Section -->
-<section class="min-h-screen px-6 lg:px-12 pt-20 pb-section-gap relative">
-<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+<section class="px-6 lg:px-12 pt-16 pb-12 md:pb-16 relative">
+<div class="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 <!-- Left Side: Content & Quick Actions -->
-<div class="lg:col-span-5 lg:sticky lg:top-32 space-y-12">
+<div class="lg:col-span-5 lg:sticky lg:top-24 space-y-10">
 <div>
-<h1 class="text-5xl lg:text-[80px] leading-[1.05] font-bold text-on-surface tracking-tight mb-8">
+<h1 class="text-5xl lg:text-[60px] leading-[1.05] font-bold text-on-surface tracking-tight mb-6">
                     Let's <span class="text-primary-container">Connect.</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md leading-relaxed">
@@ -223,7 +223,7 @@
 </div>
 </div>
 <!-- Quick Email & HQ -->
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-outline-variant/30">
 <div>
 <p class="font-label-sm text-label-sm text-primary-container uppercase tracking-widest mb-3">Quick Email</p>
 <a class="text-xl font-medium text-on-surface hover:text-primary-container transition-colors break-words" href="mailto:wholesale@medicalbooster.kr">
@@ -239,7 +239,7 @@
 </div>
 </div>
 <!-- Social Links -->
-<div class="pt-8 flex items-center gap-6">
+<div class="pt-6 flex items-center gap-5">
 <a class="w-12 h-12 rounded-full flex items-center justify-center text-white bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] shadow-lg hover:scale-110 transition-all duration-300" href="#">
 <span class="material-symbols-outlined text-[20px]">photo_camera</span> <!-- Placeholder for IG -->
 </a>
@@ -253,7 +253,7 @@
 </div>
 <!-- Right Side: Create Inquiry Form -->
 <div class="lg:col-span-7 relative">
-<div class="glass-panel p-10 md:p-14 rounded-[40px] relative z-10">
+<div class="glass-panel p-6 md:p-10 rounded-[32px] relative z-10">
 <h2 class="text-3xl font-bold text-on-surface mb-10">Create Inquiry</h2>
 <form class="space-y-10">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -300,9 +300,9 @@
 </section>
 
 <!-- Global Distribution Network -->
-<section class="py-section-gap px-6 lg:px-12 bg-on-background text-surface-bright relative overflow-hidden">
+<section class="py-10 md:py-14 px-6 lg:px-12 bg-on-background text-surface-bright relative overflow-hidden">
 <div class="max-w-[1440px] mx-auto relative z-10">
-<div class="text-center mb-16">
+<div class="text-center mb-12">
 <h2 class="text-4xl md:text-5xl font-bold mb-6">Global Distribution Network</h2>
 <p class="text-surface-variant/70 max-w-2xl mx-auto text-lg">Delivering premium K-beauty and medical aesthetic solutions to over 50 countries worldwide with rigorous regulatory compliance.</p>
 </div>
@@ -324,7 +324,7 @@
 </div>
 </div>
 <!-- Stylized Map area -->
-<div class="mt-20 h-[400px] w-full rounded-[40px] overflow-hidden relative shadow-2xl border border-white/10">
+<div class="mt-14 h-[320px] w-full rounded-[32px] overflow-hidden relative shadow-2xl border border-white/10">
 <img alt="Global Network Map" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmiwJPh1Vt7ma8e13-zb7PqEeMvZIbmLzPyXof8OuYmwvfV2RYSfVZe35jeXxzAHO9W-xGU51efGtUwTCPq9LxUkTllKz7gujXroByaQVAam0HVbzf3--oAILJMDfEqkxgyMMg8E6W7gP-O5gBK8eMtueaXbKPNua21r1q1o7GJle8xWRFiwhNeipIsyjhu4uYTgNfJ4ozu4Ms6aTr4jK6-MVSuVsZrq9lu6wPhOIT04dH65PdXgOhRBwbUzwKIOH1VCb18_7a1yiu">
 <div class="absolute inset-0 bg-gradient-to-t from-on-background via-transparent to-transparent"></div>
 <!-- Map Markers -->
@@ -335,7 +335,7 @@
 </div>
 </div>
 <!-- Decorative background circle -->
-<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute top-0 right-0 w-[560px] h-[560px] bg-primary-container/5 rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
 </section>
 
 </main>
